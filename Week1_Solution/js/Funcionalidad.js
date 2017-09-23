@@ -8,17 +8,36 @@ angular.module('MenuSize',[])
 
 	$scope.TextInput="";
 	$scope.Mensaje="";
+	$scope.Comidas;
 
 
 	function CuentePlatos(){
 
-		var Comidas;
+		var IsEmpty = true;
+		var PlatoValido = 0;
+		var Resultado;
 
-		Comidas = $scope.TextInput.split([',']);
+		$scope.Comidas = $scope.TextInput.split([',']);
 
-		console.log(Comidas);
+		console.log($scope.Comidas);
 
-		return Comidas.length;
+
+		for(var i=0;i<$scope.Comidas.length;i++){
+
+
+
+			if($scope.Comidas[i].trim()<>""){
+
+				IsEmpty = false;
+				ValidPlates++;
+			}
+
+		}
+
+		Resultado = [IsEmpty,ValidPlates];
+		
+
+		return Resultado;
 
 
 
@@ -30,8 +49,13 @@ angular.module('MenuSize',[])
 	$scope.VerifyPlates = function (){
 
 		var NumeroPlatos = 0;
+		var IsEmpty = true;
 
-		NumeroPlatos = CuentePlatos();
+		Resultados = CuentePlatos();
+
+		NumeroPlatos = Resultados[1];
+		IsEmpty = Resultados[0]];
+		
 
 
 		if(NumeroPlatos>3){
@@ -46,7 +70,7 @@ angular.module('MenuSize',[])
 
 		}
 
-		if(NumeroPlatos=0){
+		if(IsEmpty){
 
 			$scope.Mensaje= "Please enter data first";
 
