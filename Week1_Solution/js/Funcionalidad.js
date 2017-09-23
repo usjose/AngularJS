@@ -14,7 +14,9 @@ angular.module('MenuSize',[])
 
 		var Comidas = array();
 
-		Comidas = $scope.TextInput.split([','])
+		Comidas = $scope.TextInput.split([',']);
+
+		console.log(Comidas);
 
 		return Comidas.length;
 
