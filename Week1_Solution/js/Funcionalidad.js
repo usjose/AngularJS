@@ -34,9 +34,9 @@ angular.module('MenuSize',[])
 
 		}
 
-		Resultado = [IsEmpty,ValidPlates];
+		Resultado[0]=IsEmpty;
+		Resultado[0]=ValidPlates;
 		
-
 		return Resultado;
 
 
