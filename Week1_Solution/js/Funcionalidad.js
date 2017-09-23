@@ -12,7 +12,7 @@ angular.module('MenuSize',[])
 
 	function CuentePlatos(){
 
-		
+		var Comidas;
 
 		Comidas = $scope.TextInput.split([',']);
 
