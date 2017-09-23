@@ -40,15 +40,15 @@ angular.module('MenuSize',[])
 
 		}
 
-		else if(NumeroPlatos=0){
-
-			$scope.Mensaje= "Please enter data first";
-
-		}
-
 		else{
 
 			$scope.Mensaje= "Bring it on, pal. Enjoy!";
+
+		}
+
+		if(NumeroPlatos=0){
+
+			$scope.Mensaje= "Please enter data first";
 
 		}
 
