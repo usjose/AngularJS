@@ -97,6 +97,6 @@ function LunchCheckController($scope){
 
 
 
-});
+}
 
 })();
