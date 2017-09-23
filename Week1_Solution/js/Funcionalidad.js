@@ -54,7 +54,7 @@ angular.module('MenuSize',[])
 		Resultados = CuentePlatos();
 
 		NumeroPlatos = Resultados[1];
-		IsEmpty = Resultados[0]];
+		IsEmpty = Resultados[0];
 		
 
 
