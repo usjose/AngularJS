@@ -94,7 +94,7 @@ function LunchCheckController($scope){
 
 		}
 
-		return $scope.Mensaje;
+		//return $scope.Mensaje;
 
 	}
 	
