@@ -12,8 +12,8 @@
 
 	<div ng-controller='LunchCheckController'>
 		
-		<p>{{Mensaje}}</p><br>
-		<input type="text" ng-model ="TextInput"><p>Spaces don't count as dishes</p><br>
+		<p {{Estilo}}>{{Mensaje}}</p><br>
+		<input type="text" {{EstiloTB}} ng-model ="TextInput"><p>Spaces don't count as dishes</p><br>
 		<button ng-click="VerifyPlates();">Check If <br>too much</button><br>
 
 

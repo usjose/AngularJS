@@ -13,6 +13,8 @@ function LunchCheckController($scope){
 
 	$scope.TextInput="";
 	$scope.Mensaje="";
+	$scope.Estilo="";
+	$scope.EstiloTB="";
 	$scope.Comidas;
 
 
@@ -71,18 +73,24 @@ function LunchCheckController($scope){
 		if(NumeroPlatos>3){
 
 			$scope.Mensaje= "Too Much, man!. Don't think about it";
+			$scope.Estilo= "myStyle={color:'green'}";
+			$scope.EstiloTB= "myStyle={border:'green'}";
 
 		}
 
 		else{
 
 			$scope.Mensaje= "Bring it on, pal. Enjoy!";
+			$scope.Estilo= "myStyle={color:'green'}";
+			$scope.EstiloTB= "myStyle={border:'green'}";
 
 		}
 
 		if(IsEmpty){
 
 			$scope.Mensaje= "Please enter data first";
+			$scope.Estilo= "myStyle={color:'red'}";
+			$scope.EstiloTB= "myStyle={border:'red'}";
 
 		}
 
