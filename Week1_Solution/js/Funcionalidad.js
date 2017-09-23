@@ -15,7 +15,7 @@ angular.module('MenuSize',[])
 
 		var IsEmpty = true;
 		var ValidPlates = 0;
-		var Resultado = ["",""];
+		var Resultado = [true,0];
 
 		$scope.Comidas = $scope.TextInput.split([',']);
 
@@ -23,7 +23,6 @@ angular.module('MenuSize',[])
 
 
 		for(var i=0;i<$scope.Comidas.length;i++){
-
 
 
 			if($scope.Comidas[i].trim()!=""){
@@ -36,6 +35,8 @@ angular.module('MenuSize',[])
 
 		Resultado[0]=IsEmpty;
 		Resultado[1]=ValidPlates;
+
+		console.log(Resultado);
 		
 		return Resultado;
 
@@ -50,6 +51,7 @@ angular.module('MenuSize',[])
 
 		var NumeroPlatos = 0;
 		var IsEmpty = true;
+		var Resultados = [true,0];
 
 		Resultados = CuentePlatos();
 
