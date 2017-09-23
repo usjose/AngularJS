@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <script src="js/angular.min.js"></script>
+    <script src="js/Funcionalidad.js"></script>
 	<title>Solution Week 1</title>
 </head>
-<body>
+<body ng-app="MenuSize">
 
-	<h2>Week 1 Solution</h2>>
+	<h2>Week 1 Solution</h2>
+
+	<div ng-controller="Controlador">
+		
+		<p>{{Mensaje}}</p>
+		<input type="text" ng-model ="TextInput">
+		<button>Check If too much</button>
+
+
+
+	</div>
 
 </body>
 </html>
