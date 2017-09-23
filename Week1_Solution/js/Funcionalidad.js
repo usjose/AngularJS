@@ -14,7 +14,7 @@ angular.module('MenuSize',[])
 
 		var Comidas = array();
 
-		Comidas = TextInput.split([','])
+		Comidas = $scope.TextInput.split([','])
 
 		return Comidas.length;
 
@@ -25,7 +25,7 @@ angular.module('MenuSize',[])
 	
 
 
-	function VerifyPlates(NumeroPlatos){
+	$scope.VerifyPlates = function (){
 
 		var NumeroPlatos = 0;
 
@@ -43,6 +43,8 @@ angular.module('MenuSize',[])
 			$scope.Mensaje= "Bring it on, pal. Enjoy!";
 
 		}
+
+		return $scope.Mensaje;
 
 	}
 	
