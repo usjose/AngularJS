@@ -73,24 +73,24 @@ function LunchCheckController($scope){
 		if(NumeroPlatos>3){
 
 			$scope.Mensaje= "Too Much, man!. Don't think about it";
-			$scope.Estilo= "style=\"color:'green'\"";
-			$scope.EstiloTB= "style=\"border:'green'\"";
+			$scope.Estilo= "style=\"color:green;\"";
+			$scope.EstiloTB= "style=\"border:green;\"";
 
 		}
 
 		else{
 
 			$scope.Mensaje= "Bring it on, pal. Enjoy!";
-			$scope.Estilo= "style=\"color:'green'\"";
-			$scope.EstiloTB= "style=\"border:'green'\"";
+			$scope.Estilo= "style=\"color:green;\"";
+			$scope.EstiloTB= "style=\"border:green;\"";
 
 		}
 
 		if(IsEmpty){
 
 			$scope.Mensaje= "Please enter data first";
-			$scope.Estilo= "style=\"color:'red'\"";
-			$scope.EstiloTB= "style=\"border:'red'\"";
+			$scope.Estilo= "style=\"color:red;\"";
+			$scope.EstiloTB= "style=\"border:red;\"";
 
 		}
 
