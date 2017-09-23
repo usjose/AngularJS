@@ -4,7 +4,12 @@
 
 angular.module('MenuSize',[])
 
-.controller('Controlador', function($scope){
+.controller('LunchCheckController', LunchCheckController);
+
+
+LunchCheckController.$inject = [$scope];
+
+function LunchCheckController($scope){
 
 	$scope.TextInput="";
 	$scope.Mensaje="";

@@ -10,10 +10,10 @@
 
 	<h2>Week 1 <br> What do you want for lunch?</h2>
 
-	<div ng-controller='Controlador'>
+	<div ng-controller='LunchCheckController'>
 		
 		<p>{{Mensaje}}</p><br>
-		<input type="text" ng-model ="TextInput"><br>
+		<input type="text" ng-model ="TextInput"><p>Spaces don't count as dishes</p><br>
 		<button ng-click="VerifyPlates();">Check If <br>too much</button><br>
 
 
