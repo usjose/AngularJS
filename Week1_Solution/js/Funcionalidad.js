@@ -14,7 +14,7 @@ angular.module('MenuSize',[])
 	function CuentePlatos(){
 
 		var IsEmpty = true;
-		var PlatoValido = 0;
+		var ValidPlates = 0;
 		var Resultado = ["",""];
 
 		$scope.Comidas = $scope.TextInput.split([',']);
