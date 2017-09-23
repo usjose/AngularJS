@@ -26,7 +26,7 @@ angular.module('MenuSize',[])
 
 
 
-			if($scope.Comidas[i].trim()<>""){
+			if($scope.Comidas[i].trim()!=""){
 
 				IsEmpty = false;
 				ValidPlates++;
