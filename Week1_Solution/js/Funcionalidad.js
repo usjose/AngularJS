@@ -36,7 +36,7 @@ angular.module('MenuSize',[])
 
 		if(NumeroPlatos>3){
 
-			$scope.Mensaje= "Too Much, man!" <br> "Don't think about it";
+			$scope.Mensaje= "Too Much, man! <br> Don't think about it";
 
 		}
 
