@@ -92,11 +92,6 @@ function LunchCheckController($scope){
 	
 
 
-
-
-
-
-
 }
 
 })();
