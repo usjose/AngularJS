@@ -74,7 +74,7 @@ function LunchCheckController($scope){
 
 			$scope.Mensaje= "Too Much, man!. Don't think about it";
 			$scope.Estilo= "color:green;";
-			$scope.EstiloTB= "border:green;";
+			$scope.EstiloTB= "border-color:green;";
 
 		}
 
@@ -82,7 +82,7 @@ function LunchCheckController($scope){
 
 			$scope.Mensaje= "Bring it on, pal. Enjoy!";
 			$scope.Estilo= "color:green;";
-			$scope.EstiloTB= "border:green;";
+			$scope.EstiloTB= "border-color:green;";
 
 		}
 
@@ -90,7 +90,7 @@ function LunchCheckController($scope){
 
 			$scope.Mensaje= "Please enter data first";
 			$scope.Estilo= "color:red;";
-			$scope.EstiloTB= "border:red;";
+			$scope.EstiloTB= "border-color:red;";
 
 		}
 
