@@ -19,6 +19,7 @@ angular.module('MenuSize',[])
 
 		$scope.Comidas = $scope.TextInput.split([',']);
 
+		console.log("Scope Comidas: ");
 		console.log($scope.Comidas);
 
 
@@ -36,6 +37,8 @@ angular.module('MenuSize',[])
 		Resultado[0]=IsEmpty;
 		Resultado[1]=ValidPlates;
 
+
+		console.log("Resultado es: ");
 		console.log(Resultado);
 		
 		return Resultado;
